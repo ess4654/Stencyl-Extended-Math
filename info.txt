@@ -1,0 +1,5 @@
+name=Extended Math
+description=An extension to add a whole suite of math calculations such as average value in a list, and area and circumference of a circle of given radius.
+author=Evan Svendsen
+website=https://twitter.com/TheJoblessCoder
+compatibility=all

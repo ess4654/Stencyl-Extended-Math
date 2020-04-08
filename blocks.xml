@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<palette>
+
+	<block tag="extended-math-minmaxavg" spec="%0 value of items in list %1" code="ExtendedMath.MinMaxAvg(~,~)" type="normal" color="lime" returns="number" help="Returns The Averge, Minimum, or Maximum value of items in a list">
+		<fields>
+			<dropdown order="0">
+				<choices>
+					<c text="Average" code="0"/>
+					<c text="Min" code="1"/>
+					<c text="Max" code="2"/>
+				</choices>
+			</dropdown>
+			<list order="1"></list>
+		</fields>
+	</block>
+
+	<block tag="extended-math-heavensidestep" spec="Heaven Side Step of %0" code="ExtendedMath.HeavensideStep(~)" type="normal" color="lime" returns="number" help="Returns 0 if the value given is 0, 1 if the value given is larger than 0, and -1 if value is less than 0">
+		<fields>
+			<number order="0"></number>
+		</fields>
+	</block>
+
+	<block tag="extended-math-circle" spec="%0 of circle with radius %1" code="ExtendedMath.Circle(~,~)" type="normal" color="lime" returns="number" help="Returns the area or circumference of a circle with radius R">
+		<fields>
+			<dropdown order="0">
+				<choices>
+					<c text="Area" code="0"/>
+					<c text="Circumference" code="1"/>
+				</choices>
+			</dropdown>
+			<number order="1"></number>
+		</fields>
+	</block>
+
+	<block tag="extended-math-square" spec="%0 of rectangle with length %1 and width %2" code="ExtendedMath.Square(~,~,~)" type="normal" color="lime" returns="number" help="Returns the area or parimeter of a square">
+		<fields>
+			<dropdown order="0">
+				<choices>
+					<c text="Area" code="0"/>
+					<c text="Parimeter" code="1"/>
+				</choices>
+			</dropdown>
+			<number order="1"></number>
+			<number order="2"></number>
+		</fields>
+	</block>
+
+	<block tag="extended-math-infinity" spec="Infinity" code="ExtendedMath.Infinity()" type="normal" color="lime" returns="number" help="Returns Infinity">
+	</block>
+
+	<block tag="extended-math-nan" spec="NaN" code="ExtendedMath.NaN()" type="normal" color="lime" returns="number" help="Returns NaN">
+	</block>
+
+	<block tag="extended-math-isnumber" spec="%0 Is a Number" code="ExtendedMath.IsNumber(~)" type="normal" color="lime" returns="boolean" help="Returns true if value is a number">
+		<fields>
+			<anything order="0"></anything>
+		</fields>
+	</block>
+
+	<block tag="extended-math-sumation" spec="Σ of items in list %0" code="ExtendedMath.Summation(~)" type="normal" color="lime" returns="number" help="Returns the summation of items in a list">
+		<fields>
+			<list order="0"></list>
+		</fields>
+	</block>
+
+	<block tag="extended-math-listmodifier" spec="%0 of list %1 and %2" code="ExtendedMath.ListModifier(~,~,~)" type="normal" color="blue" returns="list" help="Returns the intersection, union, or subtraction of 2 lists">
+		<fields>
+			<dropdown order="0">
+				<choices>
+					<c text="Intersection" code="0"/>
+					<c text="Union" code="1"/>
+					<c text="Subtraction" code="2"/>
+				</choices>
+			</dropdown>
+			<list order="1"></list>
+			<list order="2"></list>
+		</fields>
+	</block>
+
+	<block tag="extended-math-maxint" spec="Maximum %0 bit integer" code="ExtendedMath.MaxInt(~)" type="normal" color="lime" returns="number" help="Returns the maximum 32 bit or 64 bit integers">
+		<fields>
+			<dropdown order="0">
+				<choices>
+					<c text="32" code="0"/>
+					<c text="64" code="1"/>
+					<c text="16" code="2"/>
+					<c text="8" code="3"/>
+				</choices>
+			</dropdown>
+		</fields>
+	</block>
+
+	<block tag="extended-math-factorial" spec="%0 !" code="ExtendedMath.Factorial(~)" type="normal" color="lime" returns="number" help="Returns the factorial of a number (as integer)">
+		<fields>
+			<number order="0"></number>
+		</fields>
+	</block>
+
+	<block tag="extended-math-cuberoot" spec="cube root of %0" code="ExtendedMath.CubeRoot(~)" type="normal" color="lime" returns="number" help="Returns the cube root of a number">
+		<fields>
+			<number order="0"></number>
+		</fields>
+	</block>
+
+	<block tag="extended-math-nth-root" spec="%0 nth √ %1" code="ExtendedMath.NthRoot(~,~)" type="normal" color="lime" returns="number" help="Returns the nth root of a number">
+		<fields>
+			<number order="0"></number>
+			<number order="1"></number>
+		</fields>
+	</block>
+
+	<block tag="extended-math-log-base-n" spec="log base %0 of %1" code="ExtendedMath.LogBase(~,~)" type="normal" color="lime" returns="number" help="Returns the log with base n of any number">
+		<fields>
+			<number order="0"></number>
+			<number order="1"></number>
+		</fields>
+	</block>
+
+	<block tag="extended-math-mod-arithmatic" spec="%0 ≡ %1 mod %2" code="ExtendedMath.ModularTest(~,~,~)" type="normal" color="lime" returns="boolean" help="Returns true if the remainder of a/n and b/n is the same">
+		<fields>
+			<number order="0"></number>
+			<number order="1"></number>
+			<number order="2"></number>
+		</fields>
+	</block>
+
+	<block tag="extended-math-evenodd" spec="%0 is %1" code="ExtendedMath.IsEvenOdd(~,~)" type="normal" color="lime" returns="boolean" help="Returns whether a number is even or odd">
+		<fields>
+			<number order="0"></number>
+			<dropdown order="1">
+				<choices>
+					<c text="Even" code="true"/>
+					<c text="Odd" code="false"/>
+				</choices>
+			</dropdown>
+		</fields>
+	</block>
+
+	<block tag="extended-math-plus-minus" spec="%0 ± %1" code="ExtendedMath.PlusMinus(~,~)" type="normal" color="lime" returns="list" help="Returns a list of size 2 where A + B is at index 0 and A - B is at index 1">
+		<fields>
+			<number order="0"></number>
+			<number order="1"></number>
+		</fields>
+	</block>
+
+	<block tag="extended-math-subset" spec="%0 is subset of list %1" code="ExtendedMath.Subset(~,~)" type="normal" color="blue" returns="boolean" help="Returns true if every element of list A is found in list B">
+		<fields>
+			<list order="0"></list>
+			<list order="1"></list>
+		</fields>
+	</block>
+
+	<block tag="extended-math-choose" spec="%0 choose %1" code="ExtendedMath.Choose(~,~)" type="normal" color="lime" returns="number" help="Returns (n!/(n-k)!)/k!">
+		<fields>
+			<number order="0"></number>
+			<number order="1"></number>
+		</fields>
+	</block>
+
+	<block tag="extended-math-pick" spec="%0 pick %1" code="ExtendedMath.Pick(~,~)" type="normal" color="lime" returns="number" help="Returns (n)(n-1)(n-2)...(n - (k-1))">
+		<fields>
+			<number order="0"></number>
+			<number order="1"></number>
+		</fields>
+	</block>
+
+	<block tag="extended-math-divides" spec="%0 | %1" code="ExtendedMath.Divides(~,~)" type="normal" color="lime" returns="boolean" help="Returns true if A evenly divides B">
+		<fields>
+			<number order="0"></number>
+			<number order="1"></number>
+		</fields>
+	</block>
+
+	<block tag="extended-math-dist" spec="Distance between %0 and %1" code="ExtendedMath.DistanceBetween(~,~)" type="normal" color="red" returns="number" help="Returns the distance between 2 actors">
+		<fields>
+			<actor order="0"></actor>
+			<actor order="1"></actor>
+		</fields>
+	</block>
+
+	<block tag="extended-math-identity" spec="Identity Matrix of size %0" code="ExtendedMath.IdentityMatrix(~)" type="normal" color="blue" returns="list" help="Returns a square grid of size n with 1's along the diagonal">
+		<fields>
+			<number order="0"></number>
+		</fields>
+	</block>
+
+	<block tag="extended-math-implies" spec="%0 implies %1" code="ExtendedMath.Implies(~,~)" type="normal" color="lime" returns="boolean" help="Returns false if the premise is true but the outcome is false and true otherwise">
+		<fields>
+			<boolean order="0"></boolean>
+			<boolean order="1"></boolean>
+		</fields>
+	</block>
+
+	<block tag="extended-math-root2" spec="√2" code="ExtendedMath.RootTwo()" type="normal" color="lime" returns="number" help="Returns the square root of 2">
+	</block>
+
+	<block tag="extended-math-root2" spec="Φ" code="ExtendedMath.Phi()" type="normal" color="lime" returns="number" help="Returns the golden ratio Phi">
+	</block>
+
+	<block tag="extended-math-sincostanh" spec="%0 of %1" code="ExtendedMath.SinCosTanh(~,~)" type="normal" color="lime" returns="number" help="Calculates the sinh, cosh, or tanh of a number">
+		<fields>
+			<dropdown order="0">
+				<choices>
+					<c text="sinh" code="0"/>
+					<c text="cosh" code="1"/>
+					<c text="tanh" code="2"/>
+				</choices>
+			</dropdown>
+			<number order="1"></number>
+		</fields>
+	</block>
+
+	<block tag="extended-math-inverse" spec="Inverse of %0" code="ExtendedMath.Inverse(~)" type="normal" color="lime" returns="number" help="Returns 1/n the inverse of a number">
+		<fields>
+			<number order="0"></number>
+		</fields>
+	</block>
+
+</palette>
